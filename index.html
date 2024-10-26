@@ -1,0 +1,42 @@
+<!-- Index.html file -->
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Drawing Application</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            cursor: crosshair;
+        }
+        #controls {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Interactive Drawing Application</h2>
+
+    <!-- Controls for line circle rectangle -->
+    <div id="controls">
+        <label>
+            <input type="radio" name="tool" value="line" checked> Line
+        </label>
+        <label>
+            <input type="radio" name="tool" value="rectangle"> Rectangle
+        </label>
+        <label>
+            <input type="radio" name="tool" value="circle"> Circle
+        </label>
+
+        <input type="color" id="color-picker" value="#000000">
+        <!-- Button to clear canvas -->
+        <button id="clear-canvas">Clear Canvas</button>
+    </div>
+    
+    <canvas id="drawing-canvas" width="800" height="600"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
